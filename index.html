@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<div id=" max">
+    <title>Document</title>
+    <link rel="stylesheet" href="./轮播图/lu.css">
+    <script src="./轮播图/lu.js"></script>
+</head>
+
+<body>
+    <div class="re">
+        <ul>
+            <li>
+                <div>
+                    <img src="../图片/晚霞.jpg">
+
+
+                </div>
+            </li>
+            <li>
+                <div>
+                    <a href="../love.html">
+                        <img src="../图片/海.jpg">
+                        ❤️
+                    </a>
+
+                </div>
+            </li>
+            <li><img src="../图片/树林.jpg" alt=""></li>
+            <li><img src="../图片/湖泊.jpg" alt=""></li>
+            <li><img src="../图片/湖泊.jpg" alt=""></li>
+        </ul>
+        <ol>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+
+    <div>
+
+    </div>
+    </div>
+    <div id="wenti">
+
+
+
+
+
+
+        <h4>我是你的谁</h4>
+
+
+
+        <br>
+        <br>
+        <input type="checkbox" value="老公">老公
+
+        <input type="checkbox" value="男朋友">男盆友
+        <br>
+        <input type="text" id="who" value="写写赞美我的话">
+        <input type="button" value="提交" onclick="check()">
+        <a href="./sheb.html" id="shu" onclick="tiaozhuan();">
+
+            点击此处查看你的圣诞树吧
+
+        </a>
+    </div>
+
+</body>
+<script>
+
+    var time = 0;
+    var ad = document.getElementById("shu");
+    ad.style.display = ("none");
+    var value = document.getElementById("who");
+    var value = value.trim();
+    alert(value)
+    function check() {
+
+        if (value) {
+            ad.style.display = ("block");
+            return true;
+
+
+        }
+
+        else {
+
+            alert("请你在仔细想想你只要五次机会");
+            ad.style.display = ("none");
+
+
+        }
+        function tiaozhuan() {
+            location.href("./sheb.html")
+        }
+
+
+    }
+
+
+
+
+</script>
+
+</html>
